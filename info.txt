@@ -5,3 +5,22 @@
 5. Uruchom serwer (python manage.py runserver)
 6. Usuń bazę danych SQLLite.
 7. Zrób migracje (python manage.py makemigrations, python manage.py migrate)
+8. Stwórz superusera (python manage.py createsuperuser)
+9. Zmień język na settings.py
+
+
+Dopisuj każdą zapisaną nową apkę w settings.py w sekcji "Installed apps"
+
+Config dla PostgresSQL:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'django1',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+python manage.py makemigrations && python manage.py migrate
