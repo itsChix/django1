@@ -1,0 +1,7 @@
+1. Stworzyć własny katalog do nowego środowiska
+2. Zainstalować python3-virtualenv
+3. Zainstalować django (pip install django)
+4. Zacząć projekt (django-admin startproject)
+5. Uruchom serwer (python manage.py runserver)
+6. Usuń bazę danych SQLLite.
+7. Zrób migracje (python manage.py makemigrations, python manage.py migrate)
