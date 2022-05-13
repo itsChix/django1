@@ -3,4 +3,13 @@
 
 {%block title%} Our meetings {%endblock%}
 {%block styles%} {%endblock%}
-{%block body%} <h1>Krowa</h1> {%endblock%}
+{%block body%} 
+
+<h2>Najbliższy:</h2>
+<ol>
+{% for m in meetings %}
+    {% include 'showmeeting/base/base.html' with title=meetings.title image=meetings.image %}
+{% endfor %}
+</ol>
+
+{%endblock%}
